@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ungu"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.lihat_lihat.funenglish.score_present">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tiga" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hasil"
+        android:text="@string/your_score_is"
+        android:textColor="@color/putih"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nilai"
+        android:text="@string/yeye"
+        android:textColor="@color/putih"
+        android:textSize="60sp"
+        android:textStyle="normal|bold"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ulangi"
+        android:text="@string/replay"
+        android:layout_marginBottom="20dp"
+        android:background="@color/tosca"/>
+
+</LinearLayout>

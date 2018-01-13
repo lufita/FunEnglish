@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Fun English</string>
+    <string name="materi">Materi</string>
+    <string name="kuis">Kuis</string>
+    <string name="selamat_belajar">Selamat Belajar</string>
+    <string name="grammer">Grammer</string>
+    <string name="tenses">Tenses</string>
+    <string name="picture">Picture</string>
+    <string name="simple_present_tense">Simple Present Tense</string>
+    <string name="question">Question</string>
+    <string name="pilih_a">Pilih A</string>
+    <string name="pilih_b">Pilih B</string>
+    <string name="pilih_c">Pilih C</string>
+    <string name="pilih_d">Pilih D</string>
+    <string name="next">Next</string>
+    <string name="your_score_is">Your Score is</string>
+    <string name="yeye">100</string>
+    <string name="replay">Replay</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lihat_lihat.funenglish">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".kuis" />
+        <activity android:name=".kalimat" />
+        <activity android:name=".present_tense" />
+        <activity android:name=".score_present" />
+        <activity android:name=".past_tense" />
+        <activity android:name=".score_past" />
+        <activity android:name=".future_tense" />
+        <activity android:name=".score_furute"></activity>
+    </application>
+
+</manifest>
