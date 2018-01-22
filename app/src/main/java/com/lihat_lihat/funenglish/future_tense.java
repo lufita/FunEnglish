@@ -9,6 +9,10 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class future_tense extends AppCompatActivity {
 
     //Kamus:
@@ -44,6 +48,12 @@ public class future_tense extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_future_tense);
+
+        //iklan
+        MobileAds.initialize(this,"ca-app-pub-4022976492067687~8839315183");
+        AdView adView=(AdView)findViewById(R.id.Adview);
+        AdRequest adRequest=new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         //Diskripsi:
         quis = (TextView) findViewById(R.id.quis);

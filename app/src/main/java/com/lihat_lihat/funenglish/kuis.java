@@ -21,9 +21,19 @@ public class kuis extends AppCompatActivity {
         gambar=(Button)findViewById(R.id.gambar);
     }
     //Function:
-    public void kuis(View view)
+    public void tense(View view)
     {
         Intent intent=new Intent(kuis.this, com.lihat_lihat.funenglish.kalimat.class);
+        startActivity(intent);
+    }
+    public void gramar(View view)
+    {
+        Intent intent=new Intent(kuis.this, com.lihat_lihat.funenglish.gramar.class);
+        startActivity(intent);
+    }
+    public void gambar(View view)
+    {
+        Intent intent=new Intent(kuis.this,gambar.class);
         startActivity(intent);
     }
 }

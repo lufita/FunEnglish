@@ -16,4 +16,66 @@
     <string name="your_score_is">Your Score is</string>
     <string name="yeye">100</string>
     <string name="replay">Replay</string>
+    <string name="tentang">Aplikasi Fun English merupakan aplikasi edukasi untuk belajar bahasa inggris yang ditunjukan kepada pemula atau dasar.  Aplikasi ini akan berkembang jika ada pembaharuan.\nTerima Kasih .\nSelamat Belajar.</string>
+    <string name="reading">Reading</string>
+    <string name="simple_past_tense">Simple Past Tense</string>
+    <string name="simple_future_tense">Simple Future Tense</string>
+    <string name="present1">Simple Present Tense</string>
+    <string name="present2">\t\t Simple present tense dibentuk dari verb-1 (present tense) atau linking verb “Be” (is, am, are). Apa itu verb-1? Verb-1 merupakan bare invinite dengan tambahan -s atau -es (contoh verb-1: does, goes, wants). \n
+       \t\t Khusus untuk subject berupa singular noun (kata benda tunggal: Tita, book, car) atau third person singular pronoun (kata ganti orang ketiga tunggal: she, he, it); atau tanpa tambahan apapun (contoh verb-1: do, go, want) untuk subject berupa plural noun (boys, men, books) atau plural pronoun (we, they), pronoun I/you, atau compound subject (you and me, Tina and Ratih).</string>
+    <string name="present3">Contoh Simple Present Tense \n
+        1. Kalimat Positif \n
+        \t • S + V-1 S +/- auxiliary (do/does) + bare infinitive \n
+        \t\t\t Contoh : She likes eating out \n
+        \t • S + be (am/is/are) \n
+        \t\t\t Contoh : The children are naughty \n
+        2. Kalimat Negatif \n
+        \t • S + auxiliary (do/does) + not + bare infinitive \n
+        \t\t\t Contoh : She doesn’t like eating out \n
+        \t • S + be(am/is/are) + not \n
+        \t\t\t Contoh : The children aren’t naughty \n
+        3. Kalimat Pertanyaan \n
+       \t • Do/Does + S + bare infinitive \n
+       \t\t\t Contoh : Does she like eating out? \n
+       \t • Be(am/is/are) + S \n
+       \t\t\t Contoh : Are the children naughty?</string>
+    <string name="past1">Simple Past Tense</string>
+    <string name="past2">\t\t Simple past tense adalah suatu bentuk kata kerja sederhana untuk menunjukkan bahwa suatu kejadian terjadi di masa lampau. Pada simple past tense, waktu kejadian (yesterday, last two days, last year) atau periode waktunya (for two months, for a day, for an hour) dapat disebutkan secara spesifik. Simple past tense juga dapat digunakan untuk membentuk conditional sentence tipe 2.</string>
+    <string name="past3"> \n Contoh Simple Past Tense \n\n
+        1. Kalimat positif \n
+       \t • S + Verb-2 (past tense) \n
+       \t\t\t Contoh : The teacher came \n
+       \t • S + be(was/were) \n
+       \t\t\t Contoh : I was a stamp collector \n\n
+        2. Kalimat Negatif \n
+       \t • S + did + not + bare infinitive \n
+       \t\t\t Contoh : The teacher didn’t come \n
+       \t • S + be(was/were) + not \n
+       \t\t\t Contoh : I wasn’t a stamp collector \n\n
+        3. Kalimat Pertanyaan \n
+       \t • Did + S + bare infinitive \n
+       \t\t\t Contoh : Did the teacher come? \n
+       \t • be(was/were) + S \n
+       \t\t\t Contoh : Was I a stamp collector?</string>
+    <string name="future1">Simple Future Tense</string>
+    <string name="future2">\t\t Simple future tense adalah suatu bentuk kata kerja yang digunakan untuk menyatakan bahwa suatu aksi terjadi dimasa depan, secara spontan atau terencana. Tense ini juga dapat digunakan untuk membentuk conditional sentence tipe 1.</string>
+    <string name="future3">\n Contoh Simple Future Tense \n\n
+        1. Kalimat Positif \n
+       \t • S + will + bare infinitive \n
+       \t\t\t Contoh : You will win \n
+       \t • S + be (am/is/are) going to + bare infinitive \n
+       \t\t\t Contoh : They are going to come \n\n
+        2. Kalimat Negatif \n
+       \t • S + will + not + bare infinitive \n
+       \t\t\t Contoh : You won’t win \n
+       \t • S + be (am/is/are) + not + going to + bare infinitive \n
+       \t\t\t Contoh : They aren’t going to come \n\n
+        3. Kalimat Pertanyaan \n
+       \t • Will + S + bare infinitive \n
+       \t\t\t Contoh : Will you win? \n
+       \t • Be (am/is/are) + S + going to + bare infinitive? \n
+       \t\t\t Contoh : Are they going to come?</string>
+    <string name="Banner">ca-app-pub-4022976492067687/3178003354</string>
+    <string name="intenstial">ca-app-pub-4022976492067687/2545369578</string>
+    <string name="banner2">ca-app-pub-4022976492067687/2172608095</string>
 </resources>

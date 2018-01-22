@@ -13,7 +13,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
-public class past_tense extends AppCompatActivity {
+public class gambar extends AppCompatActivity {
 
     //Kamus:
     TextView quis;
@@ -23,32 +23,31 @@ public class past_tense extends AppCompatActivity {
     public static int hasil, benar, salah;
 
     String[] pertanyaan = new String[]{
-            "1. She was there waiting for me alone, translete is ...",
-            "2. I ....  drop in because I was in hurry. Complete ",
-            "3. They ... one of the best football team at that time. complete",
-            "4. Ketika kita masih kecil, kita selalu bersama-sama, translete is ...",
-            "5. The land would not muddy if yesterday ... not rain, complete "
+            "1. What number is the head part?",
+            "2. What number are showed leg and foot?",
+            "3. Number 11 is part of?",
+            "4. Numbers 5 and 6 are part?",
+            "5. What number is showed ear?",
     };
     String[] pilih_jawaban = new String[]{
-            "Dulu di sini adalah lapangan yang luas", "dia di sana menungguku sendirian", "Cheeta's love each other.", "Aku tidak berharap ini terjadi",
-            "could not", "could", "would", "should",
-            "was", "were", "is", "are",
-            "I run not because I was afraid", "We were not in Liverpool last new year", "When we were kids, we were always together", "When we joined this company, I was not a manager yet",
-            "is", "were", "was", "are",
+            "Number 1","Number 2","Number 4","Number 13",
+            "Number 2 and 3","Number 4 and 5","Number 6 and 7","Number 8 and 9",
+            "Hair","Eye","Ear","Mouth",
+            "Eye and Eyebrows","Neck and Stomach","Arm and Hand","Leg and Foot",
+            "Number 2","Number 4","Number 3","Number 12",
     };
     String[] jawaban_benar = new String[]{
-            "dia di sana menungguku sendirian",
-            "could not",
-            "were",
-            "When we were kids, we were always together",
-            "was",
+            "Number 1",
+            "Number 6 and 7",
+            "Mouth",
+            "Arm and Hand",
+            "Number 4",
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_past_tense);
+        setContentView(R.layout.activity_gambar);
 
         //iklan
         MobileAds.initialize(this,"ca-app-pub-4022976492067687~8839315183");
@@ -74,9 +73,7 @@ public class past_tense extends AppCompatActivity {
         pilihB.setText(pilih_jawaban[1]);
         pilihC.setText(pilih_jawaban[2]);
         pilihD.setText(pilih_jawaban[3]);
-
     }
-
     //Function:
     public void next(View view) {
         if (pilihA.isChecked() || pilihB.isChecked() || pilihC.isChecked() || pilihD.isChecked()) {
@@ -94,7 +91,7 @@ public class past_tense extends AppCompatActivity {
                 pilihD.setText(pilih_jawaban[(nomor * 4) + 3]);
             } else {
                 hasil = benar * 20;
-                Intent selesai = new Intent(getApplicationContext(),score_past.class);
+                Intent selesai = new Intent(getApplicationContext(),score_body.class);
                 startActivity(selesai);
 
             }
@@ -102,7 +99,4 @@ public class past_tense extends AppCompatActivity {
             Toast.makeText(this, "Choise You're Answer", Toast.LENGTH_SHORT).show();
         }
     }
-
 }
-
-

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lihat_lihat.funenglish">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -24,7 +25,20 @@
         <activity android:name=".past_tense" />
         <activity android:name=".score_past" />
         <activity android:name=".future_tense" />
-        <activity android:name=".score_furute"></activity>
+        <activity android:name=".score_furute" />
+        <activity android:name=".reading" />
+        <activity android:name=".score_reading" />
+        <activity android:name=".tentang" />
+        <activity android:name=".gramar" />
+        <activity android:name=".kata" />
+        <activity android:name=".score_kata" />
+        <activity android:name=".score_body" />
+        <activity android:name=".gambar" />
+        <activity android:name=".materi" />
+        <activity android:name=".materi_present" />
+        <activity android:name=".materi_past" />
+        <activity android:name=".materi_future"></activity>
+
     </application>
 
 </manifest>

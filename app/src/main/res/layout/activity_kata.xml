@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     android:background="@color/ungu"
-    tools:context="com.lihat_lihat.funenglish.present_tense">
+    android:orientation="vertical"
+    tools:context="com.lihat_lihat.funenglish.kata">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -74,5 +76,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

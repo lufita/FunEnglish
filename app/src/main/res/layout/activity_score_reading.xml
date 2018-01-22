@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/ungu"
-
-    tools:context="com.lihat_lihat.funenglish.score_furute">
+    tools:context="com.lihat_lihat.funenglish.score_reading">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -15,8 +14,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:gravity="center"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="100dp"
@@ -46,6 +45,8 @@
                 android:text="@string/replay"
                 android:layout_marginBottom="20dp"
                 android:background="@color/tosca"/>
+
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

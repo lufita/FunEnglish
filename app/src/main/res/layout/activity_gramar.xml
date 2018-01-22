@@ -5,105 +5,96 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/ungu"
-    tools:context="com.lihat_lihat.funenglish.kalimat">
-
+    tools:context="com.lihat_lihat.funenglish.gramar">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
             <ImageView
-                android:layout_gravity="center"
                 android:layout_width="350dp"
                 android:layout_height="119dp"
-                android:src="@drawable/gramar" />
-
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:src="@drawable/backsatu"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/present"
-                android:gravity="center"
-                android:onClick="present" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="@string/simple_present_tense"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="normal|bold" />
-
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:padding="16sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="vertical">
-
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
                     <Button
+                        android:onClick="kata"
+                        android:id="@+id/kata"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/past"
                         android:gravity="center"
-                        android:onClick="pastense" />
-
+                        android:background="@drawable/kata" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/grammer"
                         android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Simple Past Tense"
+                        android:layout_marginTop="10dp"
                         android:textColor="#FFFFFF"
-                        android:textSize="15sp"
-                        android:textStyle="normal|bold" />
-
+                        android:textSize="20sp"
+                        android:textStyle="normal|bold"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="55dp"
-                    android:orientation="vertical">
-
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
                     <Button
+                        android:onClick="bacaan"
+                        android:id="@+id/read"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/future"
                         android:gravity="center"
-                        android:onClick="future" />
-
+                        android:background="@drawable/reading" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/reading"
                         android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Simple Future Tense"
-                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
                         android:textColor="#FFFFFF"
-                        android:textSize="15sp"
-                        android:textStyle="normal|bold" />
+                        android:textSize="20sp"
+                        android:textStyle="normal|bold"/>
 
                 </LinearLayout>
+
 
             </LinearLayout>
+            <com.google.android.gms.ads.AdView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Adview"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/Banner"
+                android:layout_gravity="center"
+                ></com.google.android.gms.ads.AdView>
 
         </LinearLayout>
     </ScrollView>

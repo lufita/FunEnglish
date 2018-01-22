@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/ungu"
-
-    tools:context="com.lihat_lihat.funenglish.score_furute">
+    tools:context="com.lihat_lihat.funenglish.score_kata">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -48,4 +47,6 @@
                 android:background="@color/tosca"/>
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
+

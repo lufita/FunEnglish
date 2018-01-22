@@ -1,78 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     android:background="@color/ungu"
     tools:context="com.lihat_lihat.funenglish.MainActivity">
-
-    <Button
-        android:id="@+id/materi"
-        android:layout_marginTop="30dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:background="@drawable/materi" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/materi"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="normal|bold"/>
-    <Button
-        android:id="@+id/kuis"
-        android:onClick="kuis"
-        android:layout_marginTop="40dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:background="@drawable/kuis" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/kuis"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="normal|bold"/>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <Button
+                android:onClick="materi"
+                android:id="@+id/materi"
+                android:layout_marginTop="30dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/lucu"/>
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/materi" />
             <TextView
-                android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/selamat_belajar"
-                android:textStyle="normal|italic"
-                android:textSize="20dp"
+                android:text="@string/materi"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
                 android:textColor="#FFFFFF"
-                android:textAlignment="center"/>
+                android:textSize="20sp"
+                android:textStyle="normal|bold"/>
+            <Button
+                android:id="@+id/kuis"
+                android:onClick="kuis"
+                android:layout_marginTop="40dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/kuis" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kuis"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingTop="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:onClick="tentang"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/lucu"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selamat_belajar"
+                        android:textStyle="normal|italic"
+                        android:textSize="20dp"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+                <com.google.android.gms.ads.AdView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/Adview"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/Banner"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true">
+                </com.google.android.gms.ads.AdView>
+
+            </RelativeLayout>
 
         </LinearLayout>
-
-    </RelativeLayout>
-
-
+    </ScrollView>
 
 </LinearLayout>

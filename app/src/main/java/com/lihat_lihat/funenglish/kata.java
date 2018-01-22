@@ -9,12 +9,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-
-public class past_tense extends AppCompatActivity {
-
+public class kata extends AppCompatActivity {
     //Kamus:
     TextView quis;
     RadioGroup radiogroup;
@@ -23,38 +18,32 @@ public class past_tense extends AppCompatActivity {
     public static int hasil, benar, salah;
 
     String[] pertanyaan = new String[]{
-            "1. She was there waiting for me alone, translete is ...",
-            "2. I ....  drop in because I was in hurry. Complete ",
-            "3. They ... one of the best football team at that time. complete",
-            "4. Ketika kita masih kecil, kita selalu bersama-sama, translete is ...",
-            "5. The land would not muddy if yesterday ... not rain, complete "
+            "1. Nasi, translete is ...",
+            "2. Bunga, translate is.. ",
+            "3. Car, translate is..",
+            "4. Lion, translete is ...",
+            "5. Window, translate is.. "
     };
     String[] pilih_jawaban = new String[]{
-            "Dulu di sini adalah lapangan yang luas", "dia di sana menungguku sendirian", "Cheeta's love each other.", "Aku tidak berharap ini terjadi",
-            "could not", "could", "would", "should",
-            "was", "were", "is", "are",
-            "I run not because I was afraid", "We were not in Liverpool last new year", "When we were kids, we were always together", "When we joined this company, I was not a manager yet",
-            "is", "were", "was", "are",
+           "Rice", "Flower", "Cake", "Rices",
+            "Sunday", "Cucumber", "Car", "Flower",
+            "Nasi", "Mobil", "Kucing", "Hewan",
+            "Harimau", "Macan", "Singa", "Kucing",
+            "Atap", "Lantai", "Pintu", "Jendela",
     };
     String[] jawaban_benar = new String[]{
-            "dia di sana menungguku sendirian",
-            "could not",
-            "were",
-            "When we were kids, we were always together",
-            "was",
+            "Rice",
+            "Flower",
+            "Mobil",
+            "Singa",
+            "Jendela",
     };
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_past_tense);
-
-        //iklan
-        MobileAds.initialize(this,"ca-app-pub-4022976492067687~8839315183");
-        AdView adView=(AdView)findViewById(R.id.Adview);
-        AdRequest adRequest=new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        setContentView(R.layout.activity_kata);
 
         //Diskripsi:
         quis = (TextView) findViewById(R.id.quis);
@@ -74,9 +63,7 @@ public class past_tense extends AppCompatActivity {
         pilihB.setText(pilih_jawaban[1]);
         pilihC.setText(pilih_jawaban[2]);
         pilihD.setText(pilih_jawaban[3]);
-
     }
-
     //Function:
     public void next(View view) {
         if (pilihA.isChecked() || pilihB.isChecked() || pilihC.isChecked() || pilihD.isChecked()) {
@@ -94,7 +81,7 @@ public class past_tense extends AppCompatActivity {
                 pilihD.setText(pilih_jawaban[(nomor * 4) + 3]);
             } else {
                 hasil = benar * 20;
-                Intent selesai = new Intent(getApplicationContext(),score_past.class);
+                Intent selesai = new Intent(getApplicationContext(),score_kata.class);
                 startActivity(selesai);
 
             }
@@ -104,5 +91,3 @@ public class past_tense extends AppCompatActivity {
     }
 
 }
-
-

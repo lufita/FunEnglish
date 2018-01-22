@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ungu"
-    tools:context="com.lihat_lihat.funenglish.present_tense">
+    android:orientation="vertical"
+    tools:context="com.lihat_lihat.funenglish.reading">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -13,51 +14,53 @@
             android:layout_height="fill_parent"
             android:padding="16dp"
             android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/soal2"
+                />
             <TextView
-                android:id="@+id/quis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/question"
-                android:textSize="16sp"
-                android:textColor="@color/putih"
-                android:textStyle="bold|normal"/>
+                android:text="Pertanyaan"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/quis"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                />
+
             <RadioGroup
-                android:id="@+id/radioGroup"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/pilih_a"
-                    android:id="@+id/pilihA"
-                    android:textStyle="normal"
-                    android:textColor="@color/putih"/>
+                    android:id="@+id/pilihanA"
+                    />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pilih_b"
-                    android:id="@+id/pilihB"
-                    android:textStyle="normal"
-                    android:textColor="@color/putih"/>
+                    android:text="Pilih B "
+                    android:id="@+id/pilihanB"
+                    />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pilih_c"
-                    android:id="@+id/pilihC"
-                    android:textStyle="normal"
-                    android:textColor="@color/putih"/>
+                    android:text="Pilih C "
+                    android:id="@+id/pilihanC"
+                    />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pilih_d"
-                    android:id="@+id/pilihD"
-                    android:textStyle="normal"
-                    android:textColor="@color/putih"/>
-                <ImageView
-                    android:layout_marginTop="70dp"
-                    android:layout_width="200dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/dua"/>
+                    android:text="Pilih D "
+                    android:id="@+id/pilihanD"
+                    />
             </RadioGroup>
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -71,8 +74,6 @@
                     android:onClick="next"
                     android:background="@color/tosca"/>
             </RelativeLayout>
-
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

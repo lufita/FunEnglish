@@ -3,77 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lihat_lihat.funenglish.kuis"
     android:orientation="vertical"
-    android:background="@color/ungu">
+    android:background="@color/ungu"
+    tools:context="com.lihat_lihat.funenglish.materi">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
             <Button
-                android:onClick="gramar"
-                android:id="@+id/grammer"
-                android:layout_marginTop="15dp"
+                android:onClick="present"
+                android:id="@+id/satu"
+                android:layout_marginTop="30dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@drawable/grammer" />
+                android:background="@drawable/materidua" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/grammer"
+                android:text="@string/simple_present_tense"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="normal|bold"/>
             <Button
-                android:id="@+id/kalimat"
-                android:onClick="tense"
-                android:layout_marginTop="20dp"
+                android:onClick="past"
+                android:id="@+id/dua"
+                android:layout_marginTop="10dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@drawable/kalimat" />
+                android:background="@drawable/materisatu" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tenses"
+                android:text="@string/simple_past_tense"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="normal|bold"/>
             <Button
-                android:onClick="gambar"
-                android:id="@+id/gambar"
-                android:layout_marginTop="20dp"
+                android:onClick="future"
+                android:id="@+id/tiga"
+                android:layout_marginTop="10dp"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@drawable/picture" />
+                android:background="@drawable/materitiga" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/picture"
+                android:text="@string/simple_future_tense"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="normal|bold"/>
+
         </LinearLayout>
     </ScrollView>
-
-
-
 </LinearLayout>
